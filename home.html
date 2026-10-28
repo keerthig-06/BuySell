@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DealHub - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1>DealHub</h1>
+
+        <input type="text" id="search"
+               placeholder="Search products..."
+               onkeyup="searchProducts()">
+
+        <button onclick="goToSell()">Sell Product</button>
+        <button onclick="logout()">Logout</button>
+    </nav>
+
+
+    <section class="welcome">
+        <h2>Find Great Deals</h2>
+        <p>Buy and sell used products easily.</p>
+    </section>
+
+
+    <div class="categories">
+        <button onclick="showCategory('All')">All</button>
+        <button onclick="showCategory('Electronics')">Electronics</button>
+        <button onclick="showCategory('Furniture')">Furniture</button>
+        <button onclick="showCategory('Vehicles')">Vehicles</button>
+        <button onclick="showCategory('Books')">Books</button>
+    </div>
+
+
+   <h2 class="heading">Available Products</h2>
+
+<div id="products" class="products">
+
+    <div class="card" data-category="Electronics">
+        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab">
+
+        <div class="card-content">
+            <h3>iPhone 13</h3>
+            <p class="price">₹35,000</p>
+            <p class="location">📍 Chennai</p>
+            <p class="emi">✓ EMI Available</p>
+
+            <button class="buy" onclick="buyProduct('iPhone 13', 35000, true)">
+                Buy Now
+            </button>
+        </div>
+    </div>
+
+
+    <div class="card" data-category="Electronics">
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853">
+
+        <div class="card-content">
+            <h3>Dell Laptop</h3>
+            <p class="price">₹28,000</p>
+            <p class="location">📍 Coimbatore</p>
+            <p class="emi">✓ EMI Available</p>
+
+            <button class="buy" onclick="buyProduct('Dell Laptop', 28000, true)">
+                Buy Now
+            </button>
+        </div>
+    </div>
+
+
+    <div class="card" data-category="Furniture">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO5hHhjL_QqwwskpA_km6U7Nc5UH00LPeM55HUQol2eZkYKQBUVJ9v9Kk&s=10">
+
+        <div class="card-content">
+            <h3>Study Table</h3>
+            <p class="price">₹4,500</p>
+            <p class="location">📍 Erode</p>
+            <p class="emi">Cash Payment</p>
+
+            <button class="buy" onclick="buyProduct('Study Table', 4500, false)">
+                Buy Now
+            </button>
+        </div>
+    </div>
+
+
+    <div class="card" data-category="Vehicles">
+        <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e">
+
+        <div class="card-content">
+            <h3>Mountain Bicycle</h3>
+            <p class="price">₹8,500</p>
+            <p class="location">📍 Salem</p>
+            <p class="emi">Cash Payment</p>
+
+            <button class="buy" onclick="buyProduct('Mountain Bicycle', 8500, false)">
+                Buy Now
+            </button>
+        </div>
+    </div>
+
+</div>
+<div id="newProduct" class="products"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

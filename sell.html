@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DealHub - Sell Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1>DealHub</h1>
+
+        <button onclick="window.location.href='home.html'">
+            Home
+        </button>
+    </nav>
+
+
+    <div class="sell-container">
+
+        <h2>Sell Your Product</h2>
+        <p>Enter your product details below.</p>
+
+        <label>Product Name</label>
+        <input type="text" id="productName"
+               placeholder="Enter product name">
+
+        <label>Category</label>
+        <select id="productCategory">
+            <option value="">Select Category</option>
+            <option>Electronics</option>
+            <option>Furniture</option>
+            <option>Vehicles</option>
+            <option>Books</option>
+        </select>
+
+        <label>Price</label>
+        <input type="number" id="productPrice"
+               placeholder="Enter price">
+
+        <label>Location</label>
+        <input type="text" id="productLocation"
+               placeholder="Enter your location">
+
+        <label>Product Image</label>
+        <input type="file" id="productImage" accept="image/*">
+
+        <label>Description</label>
+        <textarea id="productDescription"
+                  placeholder="Describe your product"></textarea>
+
+        <button class="post-button" onclick="postProduct()">
+            Post Product
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

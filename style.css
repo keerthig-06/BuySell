@@ -1,0 +1,388 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:lightgray;
+}
+
+.login-container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #102a43;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.login-container h1 {
+    color:white;
+}
+
+.login-container input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px  #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 96%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #2ec4b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container a {
+    color: #2ec4b6;
+    text-decoration: none;
+}
+h2,h1,p{
+    color:white;
+}
+
+/* Registration Page */
+
+.register-page {
+    min-height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-box {
+    width: 850px;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(16, 42, 67, 0.15);
+}
+
+/* Left side */
+
+.register-left {
+    width: 40%;
+    background-color: #102A43;
+    color: white;
+    padding: 50px;
+}
+
+.register-left h1 {
+    color: #2EC4B6;
+    font-size: 35px;
+}
+
+.register-left p {
+    color: #D9E2EC;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.register-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.register-icons div {
+    width: 55px;
+    height: 55px;
+    background-color: #2EC4B6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+/* Right side */
+
+.register-right {
+    width: 60%;
+    padding: 40px 50px;
+}
+
+.register-right h2 {
+    color: #102A43;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.register-right > p {
+    color: #627D98;
+    margin-bottom: 20px;
+}
+
+.register-right label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    color: #102A43;
+    font-weight: bold;
+}
+
+.register-right input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #D9E2EC;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+
+.register-right button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    background-color: #2EC4B6;
+    color:white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-link {
+    text-align: center;
+    color: #627D98;
+    margin-top: 18px;
+}
+
+.login-link a {
+    color: #2EC4B6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* home style*/
+
+
+/* HOME PAGE */
+
+.navbar {
+    background-color: #102A43;
+    padding: 18px 35px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar h1 {
+    color: #2EC4B6;
+    margin-right: 20px;
+}
+
+.navbar input {
+    flex: 1;
+    padding: 11px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.navbar button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.navbar button:first-of-type {
+    background-color: #2EC4B6;
+    color: white;
+}
+
+.navbar button:last-of-type {
+    background-color: white;
+    color: #102A43;
+}
+
+
+/* Welcome Section */
+
+.welcome {
+    background-color: #102A43;
+    color: white;
+    padding: 30px 50px;
+}
+
+.welcome h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.welcome p {
+    color: #D9E2EC;
+}
+
+
+/* Categories */
+
+.categories {
+    padding: 25px 50px 10px;
+}
+
+.categories button {
+    padding: 10px 18px;
+    margin-right: 8px;
+    border: 1px solid #D9E2EC;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.categories button:hover {
+    background-color: #2EC4B6;
+    color: white;
+}
+
+
+/* Product Heading */
+
+.heading {
+    margin: 25px 50px;
+    color: #102A43;
+}
+
+
+/* Product Grid */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 50px 40px;
+}
+
+
+/* Product Card */
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px #D9E2EC;
+}
+
+
+/* Product Image */
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Product Details */
+
+.card-content {
+    padding: 15px;
+}
+
+.card h3 {
+    color: #102A43;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #102A43;
+}
+
+.location {
+    color: #627D98;
+}
+
+.emi {
+    color: #27AE60;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+
+/* Buy Button */
+
+.buy {
+    width: 100%;
+    padding: 10px;
+    background-color: #2EC4B6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy:hover {
+    background-color: #239F94;
+}
+
+/* sell style*/
+
+.sell-container {
+    width: 500px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #d9e2ec;
+}
+
+.sell-container h2 {
+    color: #102A43;
+    font-size: 28px;
+}
+
+.sell-container p {
+    color: #627D98;
+    margin-bottom: 25px;
+}
+
+.sell-container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #102A43;
+}
+
+.sell-container input,
+.sell-container select,
+.sell-container textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #D9E2EC;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.sell-container textarea {
+    height: 100px;
+    resize: none;
+}
+
+.post-button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    background-color: #2EC4B6;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.post-button:hover {
+    background-color: #239F94;
+}
